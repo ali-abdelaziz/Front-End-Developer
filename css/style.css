@@ -1,0 +1,473 @@
+/* import fonts from fonts.css file */
+
+@import url(./fonts.css);
+
+/* CSS variables */
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* ====================== Start navigation ====================== */
+
+/* .navbar {
+    background: #563d7c;
+    to be activated we should remove the class "bg-light" from the nav element
+} */
+
+
+.navbar-collapse {
+    padding-left: 25%;
+    /* to be removed in the max-width media */
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+
+.header-area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+/* .header-area .main-menu .navbar {
+    padding: 1rem;
+} */
+
+
+.header-area .main-menu .nav-item .nav-link {
+    /* font: normal 500 15px/2px var(--roboto); */
+    font-family: var(--roboto), cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+
+.header-area .main-menu .navbar-nav a.active {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.header-area .main-menu .navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* ====================== End navigation ====================== */
+
+/* ====================== Start banner area ====================== */
+
+.site-main .site-banner {
+    background: url(../img/banner/home-banner2.png) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 40%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: #563d7c;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img {
+    padding: 8rem 4rem;
+    width: 100%;
+}
+
+/* ====================== End banner area ====================== */
+
+
+/* ====================== Start about area ====================== */
+
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph>p {
+    padding: .4rem 0;
+}
+
+/* ====================== End about area ====================== */
+
+
+
+/* ====================== Start brand area ====================== */
+
+.site-main .brand-area {
+    padding: 1rem 10rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand>img {
+    width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover>img {
+    filter: brightness(0.15);
+}
+
+.site-main .brand-area .experience-area {
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span {
+    display: block;
+}
+
+.site-main .brand-area .experience-area .years-area {
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+/* .site-main .brand-area .experience-area .bg-panel {
+    position: absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+} */
+
+.site-main .brand-area .experience-area .years-area .years {
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area h2 {
+    font: normal 600 22px/30px var(--roboto);
+}
+
+.site-main .brand-area .experience-area .call-area {
+    padding-left: 10rem;
+}
+
+.site-main .brand-area .experience-area .call-area a {
+    text-decoration: none;
+}
+
+
+/* ====================== End brand area ====================== */
+
+
+/* ====================== Start services area ====================== */
+
+.site-main .services-area {
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.site-main .services-area .services-list .card-title {
+    font-size: 18px;
+}
+
+.site-main .services-area .services-list i {
+    color: #563d7c;
+    margin-bottom: 1rem;
+}
+
+.site-main>.services-area .services {
+    background: rgba(248, 252, 253, 0.973);
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    padding: 2rem 0;
+    width: 25rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main>.services-area .services:hover {
+    box-shadow: var(--box-shadow);
+}
+
+
+/* ====================== End services area ====================== */
+
+
+/* ====================== Start project area ====================== */
+
+.site-main .project-area {
+    padding: 4rem 0;
+}
+
+/* #portfolio {
+    padding: 50px 0;
+} */
+
+.site-main .project-area .subtitle {
+    width: 100%;
+    text-align: center;
+}
+
+.site-main .project-area .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.site-main .project-area .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-main .project-area .work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.site-main .project-area .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #854fee);
+    /* background: var(--gradient-color); */
+    /* background: linear-gradient(90deg, #4458dc 0%, #854fee 100%); */
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+
+
+.site-main .project-area .layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.site-main .project-area .layer p {
+    font: normal 500 16px/25px var(--roboto);
+}
+
+.site-main .project-area .layer a {
+    margin-top: 20px;
+    color: #854fee;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.site-main .project-area .work:hover img {
+    transform: scale(1.1);
+}
+
+.site-main .project-area .work:hover .layer {
+    height: 100%;
+}
+
+.site-main .project-area button {
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+}
+
+/* ====================== End project area ====================== */
+
+
+/* ====================== Start about me area ====================== */
+
+.site-main .aboutme-area .aboutme-title p {
+    padding: 1rem 7rem;
+}
+
+.site-main .aboutme-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+
+}
+
+.site-main .aboutme-area .client .client-img {
+    padding: 2rem;
+}
+
+.site-main .aboutme-area .client .client-img img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.site-main .aboutme-area .client .about-client {
+    padding-top: 2rem;
+}
+
+.site-main .aboutme-area .client .about-client h4 {
+    font: normal 500 21px/20px var(--roboto);
+    padding-top: 2rem;
+}
+
+.site-main .aboutme-area .client .about-client p {
+    font-size: 14px;
+}
+
+.site-main .aboutme-area .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .aboutme-area .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+/* ====================== End about me area ====================== */
+
+
+/* ====================== Subscribe me area ====================== */
+
+.site-main .subscribe-me-area .subscribe {
+    background: url(../img/subscribe-bg.png) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem 11rem;
+}
+
+.site-main .subscribe-me-area .subscribe .subscribe-title h4 {
+    font: normal 700 30px/30px var(--roboto);
+    color: whitesmoke;
+    margin-right: 5rem;
+}
+
+.site-main .subscribe-me-area .subscribe .subscribe-title p {
+    color: whitesmoke;
+    padding: 1rem 4rem;
+    margin-right: 5rem;
+}
+
+.site-main .subscribe-me-area .subscribe form .input-textbox input {
+    width: 400px;
+    padding: 1rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    font: normal 500 17px/20px var(--roboto);
+}
+
+.site-main .subscribe-me-area .subscribe form .input-textbox input::placeholder {
+    color: whitesmoke;
+}
+
+.site-main .subscribe-me-area .subscribe form .btn-submit button {
+    background: whitesmoke;
+    color: #000;
+    padding: .8rem 2rem;
+}
+
+
+/* ====================== End subscribe me area ====================== */
+
+
+/* ====================== Start footer area ====================== */
+
+footer.footer-area {
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a>i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i {
+    color: var(--primary-color);
+}
+
+.footer-area .copyrights a {
+    text-decoration: none;
+}
+
+.footer-area .copyrights i {
+    color: var(--primary-color2);
+}
+
+/* ====================== End footer area ====================== */
